@@ -1,0 +1,88 @@
+
+.nav{
+    
+    background-color: #000000;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #DDDDDD;
+    overflow: hidden;
+  
+}
+.nav a {
+    color: #DDDDDD;
+    margin-left: 30px;  
+  
+}
+.nav a:hover{
+    color:#FF8C32 ;
+}
+.nav h3 {
+    display: inline-block;
+}
+.Brand {
+    display: flex;
+    align-items: center;
+    
+}
+.Brand .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.Brand .logo img{
+    width: 100%;
+}
+
+.bur {
+    display: none;
+    z-index: 100;
+}
+
+@media screen and (max-width: 720px) {
+    .optionsActive {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: #000000;
+        padding: 50px;
+        border-radius: 50%;
+        align-items: center;
+        transition: .5s ease;
+        z-index: 20;
+        right: -250px;
+        top: -250px;
+    }
+    .sleepOptions{
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: #000000;
+        padding: 50px;
+        border-radius: 50%;
+        align-items: center;
+        transition: .5s ease;
+        z-index: 20;
+        right: -550px;
+        top: -550px;
+    }
+    .links {
+        margin-top: 300px;
+        margin-right: 150px;
+    }
+    .bur {
+        display: inline-block;
+    }
+    .optionsActive a {
+        display: block;
+        margin: 25px;
+        transition: .5s ease;
+    }
+    .sleepOptions a {
+        display: block;
+        margin: 25px;
+        transition: .5s ease;
+    }
+    
+}
